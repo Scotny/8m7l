@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+body {
+  background-color: #f4372b;
+  display: flex;
+  height: 100vh;
+  padding: 100px;
+  justify-content: space-between;
+}
+
+h1 {
+  background: linear-gradient(
+    90deg,
+    #ff75c3 0%,
+    #ffa647 20%,
+    #ffe83f 40%,
+    #9fff5b 60%,
+    #70e2ff 80%,
+    #cd93ff 100%
+  );
+  background-size: 300% 100%; /* Make it wider for smoother movement */
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 100px;
+  animation: gradientShift 2s infinite linear alternate; /* Moves forward and backward */
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 100% center;
+  }
+}
+
+img {
+  width: 400px;
+}
